@@ -34,12 +34,12 @@ As mentioned earlier, data types are fairly consistant accross all programming l
   - `Boolean` - There are two values that are in the `Boolean` family - `true` and `false`. Think of a lightbulb - a question could be asked whether or not a light is on or off. The answer to that question has two possible answers (values), `true` or `false`.
   - `Number` - Numbers!
   - `Undefined` - This will make more sense when we talk about variables - it's a essentially what happens when a variable has been declared but a value hasn't been assigned. It's usually represents an unintended absence of value.
-  - `Symbol` - This is a way to construct a value that is guaranteed to be unique. It's fairly new to JavaScript and used in complex coding. We will not be using or going over the `Symbol` data type in this program.
-  - `BigInt` - Similar to `Number` except can represent MUCH larger numbers. We won't be using this type in the program.
+  - `Symbol` - This is a way to construct a value that is guaranteed to be unique. It's fairly new to JavaScript and used in complex coding. We likely wont need to use this in this program.
+  - `BigInt` - Similar to `Number` except can represent MUCH larger numbers.
 
 ##### Structural Data Types
   - `Object` - A complex data type allowing for a collection of related data. An object contains properties - defined as key-value pairs. We'll talk about this more later.
-  - `Function` - You can think of this data type as being a sub-category of an `Object`.
+  - `Function` - A re-usable block of code, technically, functions are `Objects` but they operate very differently.
 
 ##### Structural Root Primitive
   - `null` - An absence of value. This is a data type with one value, `null`. It is created with intention by the programmer and is considered both a primite and a structural data type in JavaScript.
