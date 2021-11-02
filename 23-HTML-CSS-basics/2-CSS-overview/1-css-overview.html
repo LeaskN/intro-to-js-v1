@@ -1,0 +1,76 @@
+<!--
+    What is CSS?
+        - It stands for Cascading Style Sheet.
+        - A computer language - a design language.
+        - Meant to help with the presentation of web pages...
+        - ... It describes how HTML elements are to be displayed -> the styling.
+        - Think back to that analogy of the make-up of an animal -> the skeletal structure is the
+            HTML, the brain is JavaScript AND the skin is CSS.
+        - "CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript"
+        - CSS can save you a lot of work. It can control the layout of multiple web pages.
+        - You generally want to store your CSS in an external stylesheet.
+-->
+
+<!--
+    What does CSS code look like? (pg. 231)
+        - CSS uses rules that associate with HTML elements
+        - What a CSS rule looks like 
+        
+            p {
+                font-family: Arial;
+            }
+
+        - The breakdown:
+            - p                  -> the selector.
+            - font-family: Arial -> a declaration.
+            - font-family        -> a property (like a property on an object in JavaScript... OH BOY!).
+            - Arial              -> a value.
+        
+
+        - CSS works by associating rules with HTML elements. These rules govern how the content of specified
+            elements should be displayed. A CSS rule contains two parts: a selector and a declaration.
+-->
+
+<!--
+    External vs Internal CSS (pg. 235)
+        - <link> -> this tag allows you to connect your HTML with your CSS
+            - href -> Hyper Reference (it's a hyperlink) -> within the link tag this is actually how you link to your CSS.
+            - type -> this is how you indicate what kind of document you are linking to - 'text/css'
+            - rel -> 
+        - <style> -> you can add an internal stylesheet to your HTML documents using this tag
+
+        - Why use one or the other? (pg. 241)
+-->
+
+<!--
+    Side note - CSS Sizing Units (pg. 276)
+-->
+
+<!--
+    CSS Selectors (pg. 237)
+        - There are A LOT of selectors to choose from
+            ie. element selector - p <--- selecting just the <p> tags
+                element element selector - div p <-- selecting just the p tags that are children of div tags
+                element + element selector - div + p <-- selecting the first p tag that is a sibling of div tags
+                
+                id selector - selects ONLY the element with the corresponding id attribute
+                class selector - selects ALL the elements with the corresponding class attribute
+        https://www.w3schools.com/cssref/css_selectors.asp
+-->
+
+<!--
+    How CSS rules cascade (pg. 239)
+    - Last Rule -> 
+        Be aware that if you have a rule with the same 
+        level of specificity as another, the rule that is below it in your stylesheet will take
+        precedence.
+
+    - Specificity -> specificity in CSS determines which CSS selector takes precedence. 
+        AKA, you can overwrite styles if you want... check out the starwars resource to see
+        which selector trumps another. Also, be aware that if you have a rule with the same 
+        level of specificity as another, the rule that is below it in your stylesheet will take
+        precedence (Last Rule).
+        
+    - !important -> this will override any level of specificity -> same rule applies, however if 
+        the CSS rule is below another !important selector (Last Rule). 
+-->

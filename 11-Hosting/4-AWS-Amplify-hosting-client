@@ -1,0 +1,24 @@
+DO THIS ON YOUR PERSONAL AWS ACCOUNTS
+ERRORS MAY COST STUDENTS UP TO $1.00/month
+
+Navigate to the Amplify service
+    - Click new app > host web app
+    - Choose github
+    - Authorize DEFAULT
+    - Enter password
+    - (refresh if need be)
+    - Select repo > main branch
+    - Leave build and test settings as-is
+    - Next
+    - Save & Deploy
+
+Navigate to AWS Cloudfront Service
+	- to upgrade server from http to https
+	- Create distribution
+	- Get started
+	- Grab EC2 link
+	- Origin Domain name = Grab EC2 link
+	- Scroll to default cache behavior settings
+	- Viewer protocol policy = redirect http to https
+	- Allowed Https Methods: get, head, options, put, post, patch, delete
+Future documentation: 

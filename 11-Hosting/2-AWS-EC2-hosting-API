@@ -1,0 +1,109 @@
+DO THIS ON YOUR PERSONAL AWS ACCOUNTS
+ERRORS MAY COST STUDENTS UP TO $1.00/month
+
+START UP SERVER:
+	AWS console > ec2 > launch instance >  
+	Ubuntu Server 20.04 LTS (HVM), SSD Volume Type (free tier) > t2.micro (free tier) > next until Configure security group:
+		SSH TCP 22 Custom 0.0.0.0/0
+	> Review & Launch > 
+	Launch 
+	Key pair pop up 
+		Create new key pair
+		'music' > download (* SAVE TO A FILE YOU CAN FIND *) >
+		Launch Instances 
+	Click View Instance, -> instance state and status check will not be green immediately
+	After 2-3 mins the instance should be running, click into instance ID
+	Click connect button & follow the steps
+		Your SSH client is Bash or terminal
+		Your private key is the file we just downloaded (cd to it)
+		Run step 3
+		(skip step 4 and just use the example)
+		Agree with whatever comes up in the terminal and you should see something similar to this:
+			§ ubuntu@ip-172-31-55-555:~$
+			§ You are now in a remote Ubuntu device in an AWS warehouse somewhere!
+
+CLONE CODE ONTO REMOTE DEVICE:
+	- Locally, make sure back-end is up to date (add, commit, push if necessary)
+	- In the Ubuntu server, git clone backend (https://github.com/Nebula-Academy/SEV3-fullstack-back-end-demo.git)
+	- cd into your backend, run the necessary installs 
+	- You should recognize the last 4, the first few are because the Ubuntu server is SO empty it even needs npm & node.js
+		○ Installing nodesource key, apt repo file, install packages, update apt file
+			§ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+		○ Install node package manager
+			§ sudo apt install npm
+			§ (Unable to correct problems is okay)
+		○ Install node js (to run JavaScript outside a browser AKA a server)
+			§ sudo apt install nodejs
+		○ Check node and npm are installed
+			§ node --version
+			§ npm --version
+
+		-----------	NOT NECESSARY IF YOU ALREADY HAVE A PROJECT -----------
+		○ Create an npm initialization and agree to everything/keep the standards
+			§ npm init -y 
+				○ Install PSQL manager & express
+			§ npm i pg express 
+				○ Install Cross Origin Resource Sharing package & save it as a dependency
+			§ npm install --save cors 
+		-----------------------------------------------------------------------------
+
+		○ Install all dependencies
+			§ npm install
+		○ Install nodemon globally as the super user (all access rights)
+			§ IGNORE THIS sudo npm install -g nodemon IGNORE THIS
+			§ sudo npm install -g pm2
+		○ Start the Ubuntu server
+			§ pm2 start index.js 
+
+Other commands for future reference:
+	To restart the Ubuntu server: pm2 restart index.js
+	To stop the Ubuntu server: pm2 stop index.js
+
+IN AWS EC2 CONSOLE UPDATE SECURITY 
+	Click into instance ID -> scroll down and click on the Security tab -> click into the Security Groups ID -> edit Inbound rules to be the following:
+	
+	Inbound:
+		Type | Protocol |	Range	Source
+		-------------------------------	
+		HTTP	TCP	80	Anywhere	
+		HTTPS	TCP	443	Anywhere	
+		SSH	TCP	22	Anywhere	
+		CUSTOM TCP	TCP	3030	Anywhere	
+		ALL TRAFFIC	All	All	Anywhere	
+
+	Outbound:
+		Type	Protocol	Range	Source
+		All TCP	TCP	0 - 65535	Anywhere
+		All Traffic	All	All	Anywhere
+	
+	Save Rules for both after adding additional rules 
+
+TEST EC2 INSTANCE 
+
+	- Go back into EC2 instance
+	- copy Public IPv4 DNS  
+	- Open a new tab
+		○ Paste and add http:// at the front (SO NOT https://)
+		○ add :3030 at the end of URL 
+		○ Ex: http://ec2-34-205-65-31.compute-1.amazonaws.com:3030/
+	- then add other fetch routes ex: :3030/songs to list out GET request 
+		○ Ex: http://ec2-34-205-65-31.compute-1.amazonaws.com:3030/songs
+	
+
+UPDATE REACT FETCH
+	
+	Grab http URL ex: http://ec2-34-205-65-31.compute-1.amazonaws.com:3030/songs 
+	Insert it into fetch request in front-end app 
+	
+	Kill local back-end server 
+	
+IF YOU NEED TO UPDATE BACK-END CODE
+			§ Update the info locally 
+				□ add, commit and push to github
+			§ SSH into the server (follow steps in EC2 instance -> Connect to instance)
+			§ In the server, cd into back-end and git pull
+			§ nano into queries.js to edit file 
+				□ nano queries.js
+				OR
+			§ vim queries.js to check for changes
+				□ :q to quit vim

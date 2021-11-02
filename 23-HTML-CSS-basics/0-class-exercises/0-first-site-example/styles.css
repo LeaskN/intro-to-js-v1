@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+}
+
+/* this is an element element selector */
+section p {
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+/* this is an element + element selector */
+section + p {
+  color: red;
+}
+
+/* This is an id selector */
+#only-me {
+  color: purple;
+}
+
+/* This is a class selector */
+.big-font {
+  color: gold;
+  font-size: 70px;
+}
+
+p {
+  color: red !important;
+}

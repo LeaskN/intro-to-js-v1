@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About me</title>
+    <!-- 
+      This is showing you that when you have two elements that are stacked on top of each other,
+      the element with the largest margin is going to overlap the smaller margin.
+    -->
+    <style>
+      .module {
+        display: block;
+        width: 100%;
+        height: 150px;
+      }
+
+      .module-top {
+        margin-bottom: 25px;
+        background-color: #f38a6d;
+      }
+
+      .module-bottom {
+        margin-top: 50px;
+        background-color: #3bbfef;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="module module-top"></div>
+      <div class="module module-bottom"></div>
+  </body>
+</html>

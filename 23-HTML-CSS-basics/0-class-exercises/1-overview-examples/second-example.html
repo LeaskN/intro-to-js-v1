@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About me</title>
+    <!-- This is how I write a comment in HTML world. I commented out our external stylesheet below -->
+    <!-- <link type="text/css" rel="stylesheet" href="styles.css"> -->
+    <style>
+      /* This is an internal stylesheet. (Also, notice the way I am commenting). */
+      
+      /* this is an element element selector */
+      section p {
+        color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        background: gold;
+        height: 300px;
+        width: 300px;
+      }
+
+      /* this is an element + element selector */
+      section + p {
+        color: red;
+      }
+
+      /* This is an id selector */
+      #only-me {
+        color: purple;
+      }
+
+      /* This is a class selector */
+      .big-font {
+        color: gold;
+        font-size: 70px;
+      }
+
+      p {
+        color: red !important;
+      }
+
+
+      ul li {
+        list-style-type: square;
+        color: blue;
+      }
+
+      #gold li {
+        color: gold; 
+      }
+
+      ol li {
+        list-style-type: upper-roman;
+      }
+
+    </style>
+  </head>
+  <body>
+      
+    <h1>About Me Page</h1>
+
+    <section>
+      <h2>A Brief Bio:</h2>
+      <p>
+        I have been programming for a little over two years now  Before my career switch, I was working in the media industry as a video editor & producer.
+      </p>
+      <p> More text here...</p>
+    </section>
+
+    <p>Check me out!</p>
+    <p>I am below my sibling</p>
+
+    <section>
+        <a href="https://github.com/tefedrb" target="_blank"> 
+            My Github Page 
+        </a>
+        <p>Only me please!</p>
+    </section>
+
+    <div>
+    <!-- The ul element is an unordered list -->
+        <h3>My favorite food</h3>
+        <ul>
+            <!-- The li element is always going to be a child of a parent li -->
+            <li>Pizza</li>
+            <li>Dominican Breakfast</li>
+            <li>Cheesecake</li>
+        </ul>
+    </div>
+
+    <div>
+        <!-- The ol element is an ordered list -->
+            <h3>My Favorite Hobbies</h3>
+            <ol id="gold">
+                <!-- The li element is always going to be a child of a parent li -->
+                <li>Programming</li>
+                <li>Reading</li>
+                <li>Baseball</li>
+            </ol>
+        </div>
+
+    <section>
+      <div class="big-font">A Div Big Time</div>
+      <p class="big-font">Big time</p>
+      <p class="big-font">Big time</p>
+      <p class="big-font">Big time</p>
+      <p>Small time</p>
+      <p>Small time</p>
+      <p>Small time</p>
+    </section>
+  </body>
+</html>
