@@ -29,10 +29,11 @@ A quick breakdown of two popular data types should help wrap your mind around wh
 
 As mentioned earlier, data types are fairly consistant accross all programming languages. Remember, once you understand them in JavaScript you can more easily understand them in any language. There are **nine fundamental data types in JavaScript** and [they are](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) broken up into 3 umbrella categories:
   
-##### Primitive Data Types
+##### [Primitive Data Types](https://levelup.gitconnected.com/summary-of-data-types-in-javascript-a04d02715a9a#:~:text=There%20are%207%20primitive%20data,null%2C%20undefined%2C%20and%20symbol.)
   - `String` - A fancy word for text! You can also think of them as a list of characters - ie "Hello" has 5 characters - "H", "e", "l", "l", "o". A character can be anything you can physically type on your keyboard and create text with (yes, including numbers) - in programming, as long as you add quotations around the character(s) `" "` it's considered a `String` data type.
-  - `Boolean` - There are two values that are in the `Boolean` family - `true` and `false`. Think of a lightbulb - a question could be asked whether or not a light is on or off. The answer to that question has two possible answers (values), `true` or `false`.
   - `Number` - Numbers!
+  - `Boolean` - There are two values that are in the `Boolean` family - `true` and `false`. Think of a lightbulb - a question could be asked whether or not a light is on or off. The answer to that question has two possible answers (values), `true` or `false`.
+  - `null` - the intentional declaration of nothing 
   - `Undefined` - This will make more sense when we talk about variables - it's a essentially what happens when a variable has been declared but a value hasn't been assigned. It's usually represents an unintended absence of value.
   - `Symbol` - This is a way to construct a value that is guaranteed to be unique. It's fairly new to JavaScript and used in complex coding. We likely wont need to use this in this program.
   - `BigInt` - Similar to `Number` except can represent MUCH larger numbers.
