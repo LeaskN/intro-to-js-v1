@@ -38,7 +38,7 @@ As mentioned earlier, data types are fairly consistant accross all programming l
   - `Symbol` - This is a way to construct a value that is guaranteed to be unique. It's fairly new to JavaScript and used in complex coding. We likely wont need to use this in this program.
   - `BigInt` - Similar to `Number` except can represent MUCH larger numbers.
 
-### Reference Data Types
+### Reference Data Types (non-primitive)
   - `Object` - A complex data type allowing for a collection of related data. An object contains properties - defined as key-value pairs. We'll talk about this more later.
   - `Function` - A re-usable block of code, technically, functions are `Objects` but they operate very differently.
 
