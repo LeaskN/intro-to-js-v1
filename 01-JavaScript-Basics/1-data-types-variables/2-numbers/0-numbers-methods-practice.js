@@ -25,48 +25,29 @@
 // Create a variable and log it's remainder, if divided by 3, to the console 
 // What is modulo especially useful for?
 
+// For the remaining questions use the Math methods that JavaScript includes
+// All Math methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
 // find the square root of 25
 // log it to the console
-////////////////////////////////////////////////////////////////////////////////////////////////
-// Number Methods 
 
-/*
-    Math.sqrt() - allows you to find the square root of your number.
-*/
+// find the value of 3 to the power of 5
+// log it to the console
 
-/*
-    Math.pow() - The Math.pow() function returns the base to the exponent power.
-*/
+// find the value of 7.4 rounded
+// log it to the console
 
-/*
-    Math.round() - function returns the value of a number rounded to the nearest integer (a number without decimals).
-*/
+// find the rounded-up value of 7.4
+// log it to the console
 
-/*
-    Math.ceil() - function always rounds a number up to the next largest integer (a number without decimals).
-*/
+// find the absoloute value of -13
+// log it to the console
 
-/*
-    Math.floor() - function returns the largest integer less than or equal to a given number
-*/
+// find the minimum value in a set of numbers: 12,13,14,15,2,-1
+// log it to the console
 
-/*
-    Math.abs() - function returns the absolute value of a number
-*/
+// find the maximum value in a set of numbers: 12,13,14,15,2,-1
+// log it to the console
 
-/*
-    Math.min() - returns the lowest-valued number passed into it, or NaN if any 
-        parameter isn't a number and can't be converted into one
-*/
-
-/*
-    Math.max() - The Math.max() function returns the largest of the zero or more numbers given as input 
-        parameters, or NaN if any parameter isn't a number and can't be converted into one.
-*/
-
-/*
-    Math.random() - function returns a floating-point (decimal number), pseudo-random number in the range 0 to less than 1 
-        (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you 
-        can then scale to your desired range. The implementation selects the initial seed to the random 
-        number generation algorithm; it cannot be chosen or reset by the user.
-*/
+// create a random number 
+// log it to the console
