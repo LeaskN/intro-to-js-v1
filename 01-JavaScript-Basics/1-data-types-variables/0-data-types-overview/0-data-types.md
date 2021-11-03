@@ -27,7 +27,7 @@ A quick breakdown of two popular data types should help wrap your mind around wh
   - The `Number` data type should be pretty straight forward to understand - you can add two numbers together and get the sum. You can also multiply two numbers together and get a product. So yes, any math operation can be performed on a `Number`.
   - The `String` data type is anything in between `" "`, `' '`, or ``` ` ` ```  - you can think of a string as a list of characters - including spaces. "Hi, my name is John", is an example of what a `String` might look like. Unlike a `Number`, you can't expect that you'd be able to multiply a `String`. It's in a different family of data.
 
-As mentioned earlier, data types are fairly consistant accross all programming languages. Remember, once you understand them in JavaScript you can more easily understand them in any language. There are **nine fundamental data types in JavaScript** and [they are](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) broken up into 3 umbrella categories:
+As mentioned earlier, data types are fairly consistant accross all programming languages. Remember, once you understand them in JavaScript you can more easily understand them in any language. There are **nine fundamental data types in JavaScript** and [they are](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) broken up into 2 umbrella categories:
   
 ### [Primitive Data Types](https://levelup.gitconnected.com/summary-of-data-types-in-javascript-a04d02715a9a#:~:text=There%20are%207%20primitive%20data,null%2C%20undefined%2C%20and%20symbol.)
   - `String` - A fancy word for text! You can also think of them as a list of characters - ie "Hello" has 5 characters - "H", "e", "l", "l", "o". A character can be anything you can physically type on your keyboard and create text with (yes, including numbers) - in programming, as long as you add quotations around the character(s) `" "` it's considered a `String` data type.
@@ -41,9 +41,6 @@ As mentioned earlier, data types are fairly consistant accross all programming l
 ### Reference Data Types (non-primitive)
   - `Object` - A complex data type allowing for a collection of related data. An object contains properties - defined as key-value pairs. We'll talk about this more later.
   - `Function` - A re-usable block of code, technically, functions are `Objects` but they operate very differently.
-
-### Structural Root Primitive
-  - `null` - An absence of value. This is a data type with one value, `null`. It is created with intention by the programmer and is considered both a primite and a structural data type in JavaScript.
 
 ## How do we know the data type of some bit of code?
 
