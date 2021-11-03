@@ -36,7 +36,7 @@ As mentioned earlier, data types are fairly consistant accross all programming l
   - `null` - the intentional declaration of nothing 
   - `Undefined` - This will make more sense when we talk about variables - it's a essentially what happens when a variable has been declared but a value hasn't been assigned. It's usually represents an unintended absence of value.
   - `Symbol` - This is a way to construct a value that is guaranteed to be unique. It's fairly new to JavaScript and used in complex coding. We likely wont need to use this in this program.
-  - `BigInt` - Similar to `Number` except can represent MUCH larger numbers.
+  - `BigInt` - Similar to `Number` except can represent MUCH larger numbers. It cannot be used in Math methods, it wont be strictly/deeply equal to a `Number` value. Some 'bad' or older browsers do not support `Big Int`
 
 ### Reference Data Types (non-primitive)
   - `Object` - A complex data type allowing for a collection of related data. An object contains properties - defined as key-value pairs. We'll talk about this more later.

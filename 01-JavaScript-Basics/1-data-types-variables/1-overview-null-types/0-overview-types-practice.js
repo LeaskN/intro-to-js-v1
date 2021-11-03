@@ -4,7 +4,9 @@
 //   - Their age
 //   - Their height
 //   - Their profession
+//   - If they are alive or deceased
 //   - The year that they were born
 //   - A very (very?) brief bio
 //   - How many legs they have
 //   - How many arms they have
+//   - Who their parents are
