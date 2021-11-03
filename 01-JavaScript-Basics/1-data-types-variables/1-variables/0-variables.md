@@ -58,6 +58,7 @@ Declaring a variable with the keyword `const` means that you cannot change the v
 
 ```js
 const birthYear = 1900;
+
 birthYear = 1901;
 ```
 
@@ -67,7 +68,7 @@ You can name a variable whatever you want to. It's best to use a name that indic
 
 An important thing to remember is that JavaScript is **CASE-SENSITIVE**, which means a variable named `myShoes` is different than `myShoess`, and both are different than `myshoes`.
 
-Another thing to note: in these examples I've used semicolons at the end of each piece of code - this is not required in JavaScript. Read more about it [here](https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/#:~:text=The%20JavaScript%20parser%20will%20automatically,a%20%7D%20%2C%20closing%20the%20current%20block). We do generally use semicolons to [ensure JavaScript compiles properly](https://betterprogramming.pub/the-use-of-the-javascript-semicolon-843fd5e94d0e?gi=1e9ad625a395#:~:text=Semicolons%20are%20an%20essential%20part,other%20parts%20of%20the%20code.). The semicolons are read and used by the compiler (a [compiler](https://www.educba.com/javascript-compilers/) is a software that converts a high-level code scripted by developers to a low-level binary code in machine language which can be easily understood and executed by the processor and this process is called compilation or code compilation) to distinguish between separate statements so that statements do not leak into other parts of the code. 
+Another thing to note: in these examples we have semicolons at the end of each piece of code - this is not required in JavaScript. Read more about it [here](https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/#:~:text=The%20JavaScript%20parser%20will%20automatically,a%20%7D%20%2C%20closing%20the%20current%20block). We do generally use semicolons to [ensure JavaScript compiles properly](https://betterprogramming.pub/the-use-of-the-javascript-semicolon-843fd5e94d0e?gi=1e9ad625a395#:~:text=Semicolons%20are%20an%20essential%20part,other%20parts%20of%20the%20code.). The semicolons are read and used by the compiler (a [compiler](https://www.educba.com/javascript-compilers/) is a software that converts a high-level code scripted by developers to a low-level binary code in machine language which can be easily understood and executed by the processor and this process is called compilation or code compilation) to distinguish between separate statements so that statements do not leak into other parts of the code. 
 
 ### ***Reassigning Variables And Synchronous Execution***
 JavaScript runs from the top-down, AKA synchronously (like how you read, from left to right top to bottom), so further down in your program, after you've declared a variable, you can **reassign** them. It's actually not as straightforward as this ([hoisting in JavaScript](https://www.w3schools.com/js/js_hoisting.asp)), but generally speaking this holds true. ***This is a common interview topic***
@@ -125,10 +126,10 @@ There are many conventions that you'll want to pick up throughout your programmi
 Take note of the formatting of syntax. When writing code it's important to keep in mind that there are many conventions, including some for formatting that exist in order to promote clean, bug free, code that can be read by others.
 
 ### ***camelCase***
-You'll notice that a lot of variables are created with weird casing. In particular, if a variable includes two words, the first one will begin with a lowercase character and the following words will begin with uppercase characters. This is known as `camel case`. You generally want to stick to this [naming convention](https://en.wikipedia.org/wiki/Naming_convention_(programming)) when defining variables. When we get into writting `classes` we'll be using `Pascal case`, where the inital letter of a variable / classname begins with an uppercase.
+You'll notice that a lot of variables are created with weird casing. In particular, if a variable includes two words, the first one will begin with a lowercase character and the following words will begin with uppercase characters. This is known as `camel case`. You generally want to stick to this [naming convention](https://en.wikipedia.org/wiki/Naming_convention_(programming)) when defining variables. When we get into writting `classes` we'll be using `Pascal case`, where the inital letter of a variable / classname begins with an uppercase. Sticking with a convention and using it predictably will increase your coding efficiency drastically. 
 
 ### ***Reserved Keywords***
-Throughout the course you'll notice that there are [certain reserved keywords in JavaScript](https://www.w3schools.com/js/js_reserved.asp). You can't expect to make a variable with these keywords without getting an error.
+Throughout the course you'll notice that there are [certain reserved keywords in JavaScript](https://www.w3schools.com/js/js_reserved.asp). You can't expect to make a variable with these keywords without getting an error. Sometimes you wont know that you're unintentinally using a keyword, there are 63 of them and you will learn them as you utilize the language. 
 
 ### ***Comments***
 Comment your code! Especially when you are beginning it'll be great practice to write into plain English what pieces of code are doing. Comments will be ignored when your program runs. You can comment single lines by using two forward slashes `//` before the line of code you want commented. You can also create multi-line comments using `/* */`.
