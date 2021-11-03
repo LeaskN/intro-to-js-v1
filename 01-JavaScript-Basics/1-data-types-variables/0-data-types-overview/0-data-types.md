@@ -31,12 +31,12 @@ As mentioned earlier, data types are fairly consistant accross all programming l
   
 ### [Primitive Data Types](https://levelup.gitconnected.com/summary-of-data-types-in-javascript-a04d02715a9a#:~:text=There%20are%207%20primitive%20data,null%2C%20undefined%2C%20and%20symbol.)
   - `String` - A fancy word for text! You can also think of them as a list of characters - ie "Hello" has 5 characters - "H", "e", "l", "l", "o". A character can be anything you can physically type on your keyboard and create text with (yes, including numbers) - in programming, as long as you add quotations around the character(s) `" "` it's considered a `String` data type.
-  - `Number` - Numbers!
+  - `Number` - Numbers. They function the same way we use them in math. There are 4 basic operations, `+`, `-`, `*`, & `%`. There is also the `Math` object and it's methods. Numbers are generally just digits, however there are also keywords, `Infinity` & `NaN`. 
   - `Boolean` - There are two values that are in the `Boolean` family - `true` and `false`. Think of a lightbulb - a question could be asked whether or not a light is on or off. The answer to that question has two possible answers (values), `true` or `false`.
-  - `null` - the intentional declaration of nothing 
-  - `Undefined` - This will make more sense when we talk about variables - it's a essentially what happens when a variable has been declared but a value hasn't been assigned. It's usually represents an unintended absence of value.
+  - `null` - the intentional declaration of nothing. 
+  - `undefined` - This will make more sense when we talk about variables - it's a essentially what happens when a variable has been declared but a value hasn't been assigned. It usually represents an unintended absence of value.
   - `Symbol` - This is a way to construct a value that is guaranteed to be unique. It's fairly new to JavaScript and used in complex coding. We likely wont need to use this in this program.
-  - `BigInt` - Similar to `Number` except can represent MUCH larger numbers. It cannot be used in Math methods, it wont be strictly/deeply equal to a `Number` value. Some 'bad' or older browsers do not support `Big Int`
+  - `BigInt` - Similar to `Number` except can represent MUCH larger numbers. It cannot be used in Math methods, it wont be strictly/deeply equal to a `Number` value. Some 'bad' or older browsers do not support `Big Int`. The largest number value is `9007199254740991` then all follwing values must be declared as a `BigInt`. 
 
 ### Reference Data Types (non-primitive)
   - `Object` - A complex data type allowing for a collection of related data. An object contains properties - defined as key-value pairs. We'll talk about this more later.

@@ -11,10 +11,9 @@
 
 
 // Strings
-let text = "lorem ipsum";
-console.log(text);
-console.log(text[0]);
-console.log(text.length);
+// let text = "lorem ipsum";
+// console.log(text);
+// console.log(text[0]);
+// console.log(text.length);
 
 // Numbers
-
