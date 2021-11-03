@@ -1,56 +1,32 @@
-'use strict';
-// Side note: write 'use strict' at the top of your JavaScript file in order to use JavaScript in strict mode.
-// strict mode -> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-
 // Number -> another primitive value
-let myNumber = 5;
+// Practice:
+// Declare a variable and assign it to a numeric value
+// Double that value and re-assign it to the previous variable
+// Check it worked by logging to the console
 
-console.log(myNumber);
+// Create two numbers, assign them to variables and add them together
+// Check it worked by logging to the console
 
-// Below are examples of mathematical operators (-,+,/,*) combined with the assignment (=) operator
+// Create three numbers, assign them to variables and subtract them from the largest them together
+// Check it worked by logging to the console
 
-// Add operator ->
-myNumber = myNumber + myNumber;
+// Create two even numbers, assign them to variables and divide one from the other
+// Save the new value to a unique variable, we'll use it on the next exercise
+// Check it worked by logging to the console
 
-console.log(myNumber);
+// Create two odd numbers, assign them to variables and multiply one from the other
+// Save the new value to a unique variable, we'll use it on the next exercise
+// Check it worked by logging to the console
 
-// Subtract operator -> -
-myNumber -= 9;
+// Compare the previous two numbers
+// Using greater than or equal to, or less than or equal to
+// Log a true statement to the console
 
-console.log(myNumber);
+// Create a variable and log it's remainder, if divided by 3, to the console 
+// What is modulo especially useful for?
 
-// Divide operator -> /
-myNumber /= 2;
-
-console.log(myNumber, "<--- line 23");
-
-// Multiplication operator -> *
-myNumber *= 10;
-
-console.log(myNumber, "<--- line 28");
-
-//
-/* 
-    Comparison operators: 
-        less than: <
-        greater than: >
-        less than or equal to: <=
-        greater than or equal to: >=
-*/
-
-console.log(myNumber <= .5);
-
-/* 
-    Modulo % - The remainder operator (%) returns the remainder 
-        left over when one operand is divided by a second operand. It always takes the sign of the dividend
-    
-    Modulo is particularly useful when trying to determine whether a number is even or odd - if we divide by 2
-    and have a remainder of 1, we know the number is odd. If we have a remainder of 0, the number it's even.
-*/
-// This is saying: store the remainder of 10 divided by 3 into the variable holdNum
-let holdNum = 10 % 3;
-console.log(holdNum, "<--- line 47");
-
+// find the square root of 25
+// log it to the console
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // Number Methods 
 
