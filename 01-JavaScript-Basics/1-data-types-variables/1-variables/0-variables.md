@@ -43,7 +43,7 @@ const birthYear = 1900;
 In short, `var` was replaced by `let`. Both can declare variables that, later, can be re-assigned values. Declaring a variable with the keyword `var` in JavaScript isn't done anymore. When you see this you should expect that this code was written before the second major revision of JavaScript, known as [JavaScript ES6](https://www.w3schools.com/js/js_es6.asp) (ECMAScript 2015). [`var` is seen as something to avoid using because of it's loose scoping - global or function scoped, but not block scoped](https://hackernoon.com/why-you-shouldnt-use-var-anymore-f109a58b9b70). var is also an example of 'legacy code' something that shouldn't be written anymore but it still exists in live applications. We address scope later on & will return to `var` then. 
 
 ### ***`let`***
-Declaring a variable with the keyword `let` allows you to change the value stored within it later on. Reflecting on the prior box example: a `let` variable means you can take open the box up again, take things out of the box, and put something different inside of it.
+Declaring a variable with the keyword `let` allows you to change the value stored within it later on. Reflecting on the prior box example: a `let` variable means you can open the box up again, take things out of the box, and put something different inside of it.
 
 So code like this will run without errors:
 
@@ -66,7 +66,7 @@ You want to choose the proper keyword for declaring your variable depending on w
 
 You can name a variable whatever you want to. It's best to use a name that indicates what's stored inside of it. There are also a couple things to note here in regards to the syntax: we are using what's called Camel Case to name our variables. Our variable names that include more than one word begin with the first starting with a lowercase letter. Each successive word begins with a capital letter. This is by convention. In programming we generally like to follow convention.
 
-An important thing to remember is that JavaScript is **CASE-SENSITIVE**, which means a variable named `myShoes` is different than `myShoess`, and both are different than `myshoes`.
+An important thing to remember is that JavaScript is **CASE-SENSITIVE**, which means a variable named `myShoes` is different than `myshoes`, and both are different than `myshoess` or `myShoess`.
 
 Another thing to note: in these examples we have semicolons at the end of each piece of code - this is not required in JavaScript. Read more about it [here](https://www.freecodecamp.org/news/lets-talk-about-semicolons-in-javascript-f1fe08ab4e53/#:~:text=The%20JavaScript%20parser%20will%20automatically,a%20%7D%20%2C%20closing%20the%20current%20block). We do generally use semicolons to [ensure JavaScript compiles properly](https://betterprogramming.pub/the-use-of-the-javascript-semicolon-843fd5e94d0e?gi=1e9ad625a395#:~:text=Semicolons%20are%20an%20essential%20part,other%20parts%20of%20the%20code.). The semicolons are read and used by the compiler (a [compiler](https://www.educba.com/javascript-compilers/) is a software that converts a high-level code scripted by developers to a low-level binary code in machine language which can be easily understood and executed by the processor and this process is called compilation or code compilation) to distinguish between separate statements so that statements do not leak into other parts of the code. 
 
