@@ -1,5 +1,3 @@
-// String manipulation
-// OUR DATATYPE?! -> string
 
 // There are instances where it matters whether you are use single or double quotes for strings -> "" or ''
 // So lets use double quotes, "", for strings that have more than one character.
