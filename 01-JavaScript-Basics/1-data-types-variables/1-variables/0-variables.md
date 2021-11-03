@@ -25,7 +25,7 @@ All primitive values are immutable - they cannot be altered. This should not be 
   - This resource can help with this concept: [JavaScript Primitive vs. References Values](https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/)
 
 ### ***Declaring Variables***
-Using variables in JavaScript begins with creating them. In order to create a variable you need to tell the computer, explicitly, directly, that you are about to do so. This is where the term **variable declaration** comes into play. It's how you tell the computer "I want to use some memory for a variable", and to do we can use one of two different keywords: `let` or `const`. There is a third keyword JavaScript for declaring variables, the last is `var` which isn't used anymore. We will teach this keyword because it exists in legacy code & will come up in interviews.  
+Using variables in JavaScript begins with creating them. In order to create a variable you need to tell the computer, explicitly, directly, that you are about to do so. This is where the term **variable declaration** comes into play. It's how you tell the computer "I want to use some memory for a variable", and to do so we can use one of two different keywords: `let` or `const`. There is a third keyword in JavaScript for declaring variables, the last is `var` which isn't used anymore. We will teach this keyword because it exists in legacy code & will come up in interviews.
 
 Examples:
 > Declaring the variable `myFavoriteShoes` and storing a `String`:
