@@ -69,6 +69,32 @@ We'll get into methods very soon, but there is actually a `String` method you ca
 ```
 
 You can also turn a `String` into a `Number` a couple of ways
+
+- 1. Use the function (method) `parseInt()`
+
+```js
+  const holdString = "105";
+
+  const toNumber = parseInt(holdStr);
+
+  typeof(toNumber);
+  // This will return "number", proving that we've successfully coerced types.
+```
+
+- 2. Use the ***`Unary Plus`*** operator (`+`)
+
+```js
+  const holdString = "105";
+  
+  const toNumber = +holdString;
+
+  typeof(toNumber);
+  // This will also return "number"
+```
+
+> ***Note:*** you don't have to follow the format of these examples exactly. Once you begin to see the smaller pieces to what's happening above, you'll be able to write JavaScript however you want, as long as you are following the syntax rules in JavaScript. ***You need to experiment!!!!***
+
+---
 ### Template Literals
 
 Template literals is a JavaScript syntax that allows for embedded expressions during the creation of a string. 
@@ -139,6 +165,17 @@ console.log(myName[2]);
 
 Here we are using what's called `bracket notation` in order to access the value at different indices of the string within the `myName` variable.
 
+A common request is to get the last item in a string. Therefore we have a recurring line of code which is similar to this: 
+``` javascript
+let city = 'New York';
+let lastChar = city[city.length-1];
+```
+This can also be written:
+``` javascript
+let city = 'New York';
+let lastIndex = city.length-1
+let lastChar = city[lastIndex];
+```
 ### Time To Practice! 
 
 ```js
