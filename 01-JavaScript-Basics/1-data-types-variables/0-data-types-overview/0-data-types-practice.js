@@ -1,11 +1,7 @@
 /*
   Create a .js file that satisfies assignment below (The numbered instructions
-
-  Copy the final assignment text into this assignment to submit
+  For each exercise you'll want to log the result to the console to check your work
 */  
-  
-  
-  // For each exercise you'll want to log the result to the console to check your work
   
   
   // 1. Declare a new variable and set it equal to the string of your name
