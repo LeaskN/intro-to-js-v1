@@ -261,10 +261,18 @@ let food = 'pizza'
 let toppings = 'pineapple'
 let drink = 'Coke'
 
-'I am hungry and could go for '.concat(food, ' with ', toppings, ' on top and ', drink)
+console.log('I am hungry and could go for '.concat(food, ' with ', toppings, ' on top and ', drink)) 
+
+//'I am hungry and could go for pizza with pineapple on top and Coke'
 
 ```
 
+#### .split()
+``` javascript
+let splitString = "Where is my ice cream?";
+let splitStringToArr = splitString.split(' ');
+// ["Where", "is", "my", "ice", "cream?"]
+```
 #### More String Methods
 
 There are a good amount of other built-in JavaScript `String` methods that you should learn about. I recommend using the documentation over at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) and using the left-hand navigation under "Methods" to browse through what's available. Some common ones are: `indexOf()`, `slice()`, `toUpperCase()`, `split()`, `concat()`, `substr()`.
