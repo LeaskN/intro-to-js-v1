@@ -43,7 +43,7 @@ const birthYear = 1900;
 In short, `var` was replaced by `let`. Both can declare variables that, later, can be re-assigned values. Declaring a variable with the keyword `var` in JavaScript isn't done anymore. When you see this you should expect that this code was written before the second major revision of JavaScript, known as [JavaScript ES6](https://www.w3schools.com/js/js_es6.asp) (ECMAScript 2015). [`var` is seen as something to avoid using because of it's loose scoping - global or function scoped, but not block scoped](https://hackernoon.com/why-you-shouldnt-use-var-anymore-f109a58b9b70). var is also an example of 'legacy code' something that shouldn't be written anymore but it still exists in live applications. We address scope later on & will return to `var` then. 
 
 ### ***`let`***
-Declaring a variable with the keyword `let` allows you to change the value stored within it later on. Relecting on the prior box example: a `let` variable means you can take open the box up again, take things out of the box, and put something different inside of it.
+Declaring a variable with the keyword `let` allows you to change the value stored within it later on. Reflecting on the prior box example: a `let` variable means you can take open the box up again, take things out of the box, and put something different inside of it.
 
 So code like this will run without errors:
 
