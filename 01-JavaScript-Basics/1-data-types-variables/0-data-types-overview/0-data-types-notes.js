@@ -17,3 +17,29 @@
 // console.log(text.length);
 
 // Numbers
+
+//undefined
+// let varOne = ;
+// console.log(varOne)
+
+//Object
+// student{
+//     First: "John",
+//     Last: "Smith",
+//     email: "email",
+//     birthday: "1/2/21",
+//     studentID: 749301
+// }
+
+//Function
+// function(param){
+//     what you want the function to do
+// }
+// call the function with arguments
+
+//Type Of
+// console.log(typeof 'hello'); //string
+// console.log(typeof 200); //number
+// console.log(typeof true); //boolean
+// console.log(typeof 0); //number 
+// console.log(typeof null); //object
