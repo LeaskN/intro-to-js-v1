@@ -48,7 +48,7 @@ So we know that `expressions` can evaluate into `boolean` values, but we need to
 
 ### Comparison Operators (5 minutes)
 
-You can create `boolean` values using `Comparison Operators`: `>`, `<`, `===`, `==`, `>=`, `<=`. The syntax requires you to have two diffrent expressions on either side of an operator in order to make an `evaluation`. You can make `evaluations` with these operators using both `strings` and `numbers`. This is because, as mentioned earlier, JavaScript will make `type coercions` between `strings` and `numbers` under certain circumstances - this being one of them.
+You can create `boolean` values using `Comparison Operators`: `>`, `<`, `>=`, `<=`. The syntax requires you to have two diffrent expressions on either side of an operator in order to make an `evaluation`. You can make `evaluations` with these operators using both `strings` and `numbers`. This is because, as mentioned earlier, JavaScript will make `type coercions` between `strings` and `numbers` under certain circumstances - this being one of them.
 
 ```js
 "3" > "2"
@@ -74,7 +74,10 @@ This also works - letters of the alphabet will be greater than those behind them
 "a" > "z"
 // Evalutes to false
 ```
-#### Equality Operators (`==`, `===`, `!=`, `!==`) (5 minutes)
+
+***COMPLETE COMPARISON OPERATORS PRACTICE***
+
+### Equality Operators (`==`, `===`, `!=`, `!==`) (5 minutes)
 
 There are a few ways to check whether one (value) piece of data is equivalent to another. One way is by using the `Equality` operator (`==`), which checks whether the value on either side of it (operands) are equal. This returns a `boolean` value - `true` or `false`. This is another instance where JavaScript will try to coerce data types to match each other. So something like `1 == '1'` will result in true, even though on the left of the operator is a `number` and on the right a `string`. Use the `Strict Equality` operator to always consider data type in your `evaluation`. **It's best practice to do this.**
 
@@ -112,6 +115,8 @@ The **bang operator** (`!`) reverses a `boolean` value (`!true` becomes `false`)
   30 < 35
 
   ```
+
+***COMPLETE EQUALITY OPERATORS PRACTICE***
 
 ---
 
@@ -184,6 +189,7 @@ Falsy values include:
 - `false`
 - `0`
 - `-0`
+- `0n`
 - `''`, `""` -> any empty string (remember a space is a character, which means if there is a space in the string it isn't empty)
 - `null`
 - `undefined`
@@ -275,31 +281,6 @@ if(x < 25 && y > 25){
 }
 ```
 
-- The `or` operator checks to see if EITHER the expression on the left `and` right of it evaluates to `true`. If one of the values is `true` on either side, then the entire expression will evaluate to `false`. The operator looks like: `||`
-
-```js
-let x = 10;
-let y = 25;
-
-if(x < 25 || y > 20){
-  /* 
-    Code in this block will execute because 
-    the first expression on the left is true.
-    The expression on the right doesn't matter
-    and actually doesn't get evaluated because
-    the left satisfied the condition.
-  */
-}
-
-if(y > 25 || x < 25){
-  /* 
-    Code in this block will execute because 
-    the expression on the right side of the && operator 
-    evaluates to true
-  */
-}
-```
-
 - The `or` operator checks to see if EITHER the expression on the left `or` right of it evaluates to `true`. If one of the values is `true` on either side, then the entire expression will evaluate to `false`. The operator looks like: `||`
 
 ```js
@@ -341,6 +322,9 @@ if(!(x < 25 && y > 20)){
 }
 ```
 
+***COMPLETE LOGICAL OPERATORS PRACTICE***
+
+---
 ### Ternary Operator (5 minutes)
 Ternary operator syntax offers a more concise way of writing an `if...else` statement. You can think of reading the statement from left to right like: "Is y greater than x? If it is, return "Hello World!". If it's not, return "y needs to be greater than x". Notice the question mark `?` paired with the placement of the colon `:`.
 
@@ -353,6 +337,8 @@ Ternary operator syntax offers a more concise way of writing an `if...else` stat
   console.log(text);
   // This will log "y needs to be greater than x"
 ```
+
+***COMPLETE TERNARY PRACTICE***
 
 ## The Switch Statement (5 minutes)
 A `switch` statement evaluates an expression, much like an `if` statement. It matches the value produced by the expression to a series of `cases` by checking whether said value is equal to the case provided. When looking at the syntax, notice the `break` keyword. These are placed within the execution area of a confirmed case, and will cancel all other case checks and effectively leave the `switch` statement.
@@ -376,6 +362,4 @@ Also, note the `default` keyword at the bottom. This will execute if all the cas
   }
 ```
 
-### Time To Practice (10 minutes)
-
-Use the `switch` statement to recreate the Horse Racing program you built earlier.
+***COMPLETE SWITCH PRACTICE***
