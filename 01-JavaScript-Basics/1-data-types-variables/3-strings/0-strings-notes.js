@@ -1,33 +1,33 @@
-// given the string inputs '5' & '6' add them together so that they equal 11
+// // Concatenation
+// console.log("3" + "2");
+// console.log(3 + 2);
+// // Concatenation with type coersion
+// console.log(3 + '2');
 
-// convert the number 56 into a string
+// Intentional converstion from number to string 
+// let num = 4;
+// console.log(num);
+// let strNum = (num).toString();
+// console.log(strNum);
 
-// Concatinate the following strings 'I', 'am', 'happy' using the '+' operator
+// Intentional conversion from string to number
+// let str = '10';
+// console.log(str);
+// let numStr = parseInt(str);
+// console.log(numStr);
 
-// Given the variables below 
-// Create a sentence by concatinating them with template literals
-// Log that sentence to the console
+// String to num with unary plus
+// let string = '42';
+// let num = +string;
 
-const adjective;
-const verb;
-const noun;
+// console.log(num);
 
-// Given the following statement, fix it so that it logs to the console properly:
-// console.log('These are Cookie Monster's cookies!')
+// console.log('This is Nic\'s pen')
 
-// Given the following statement, fix it so that it logs to the console properly:
-// Do so by utilizing the escape backslash
-// console.log('Those are Harry's glasses')
+let userInput = 'Harry Potter';
+let preFlight = userInput.split(' ').join('-');
+console.log(preFlight)
 
-// Given the following names get the initials:
-const name1 = 'Harry Potter';
-const name2 = 'Jack Sparrow';
-const name3 = 'Peter Jackson';
-const name4 = 'Samwise Gamgee ';
-
-// DIFFICULT:
-
-// If possible, Without referring to the notes, capture the last character of a string
-
-// Dynamically get the initials from the above names
-
+let recievedData = 'Harry-Potter';
+let cleanData = recievedData.split('-').join(' ')
+console.log(cleanData)
