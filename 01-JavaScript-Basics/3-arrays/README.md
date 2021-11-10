@@ -117,7 +117,7 @@ Using the above array
 2. Change the 2nd element to equal the product of multiplying it by 3.
 3. log out the new array and check your work.
 
-< ***Hint***: You can use `compound assignment operators` to help with this task.
+> ***Hint***: You can use `compound assignment operators` to help with this task.
 
 ---
 
@@ -245,3 +245,5 @@ console.log(`I have a niece who is ${multiArray[multiArray.length-1][0]} years o
 ```
 
 Take a minute to look at what was done here. The code within the `${}` evaluates to "7", which I am using from the nested array at the end.
+
+***COMPLETE ARRAYS PRACTICE***
