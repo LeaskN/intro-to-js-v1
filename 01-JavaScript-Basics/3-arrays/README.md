@@ -8,7 +8,7 @@
 * Understand array syntax and be able to create one
 * Be able to access and modify the elements within an array
 * Understand how to research and implement array methods
-* Understand how multi-dimentional arrays and how to retrieve data from them
+* Understand multi-dimentional arrays and how to retrieve data from them
 ---
 
 ## Arrays (5 minutes)

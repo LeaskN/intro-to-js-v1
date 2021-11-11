@@ -314,7 +314,7 @@ let y = 25;
 
 if(!(x < 25 && y > 20)){
   /* 
-    Code in this block will execute because 
+    Code in this block will not execute because 
     the inner expression, within the parenthesis,
     evaluates to false. The bang operator, outside of 
     the parenthesis then coerces that value to true.
