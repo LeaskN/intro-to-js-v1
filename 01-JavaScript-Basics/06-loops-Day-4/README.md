@@ -83,6 +83,8 @@ const arrayOfNums = [5, 3, 2, 1, 0, 9, 10, 30, 55];
 `console.log` all of the even numbers.
 
 ### The `while` and `do while` Loops
+- Generally, you want to avoid `while` loops and use for-loops when possible
+- `do while` loops are similar to `Symbol` - both are rarely utilized
 
 The `while` loops keeps repeating code until a specifed condition evaluates to false. Just like the `for` loop has a `stopping condition`, the `while` loop has one of it's own.
 
@@ -123,7 +125,7 @@ You can use the keyword `break` to explicity stop and jump out of a loop:
   console.log("Phew, you must have found 5!");
 ```
 
-The above example is a bad piece of code for a number of reasons, a coule of them being that it doesn't account for the possibility that there might not be a `5` in the array and our `stopping condition` is always `true`! If there is no `5` then this loop will run until the browser crashes. This example does, however, demonstrate that you can use the `break` statement to cancel and jump out of a loop. 
+The above example is a bad piece of code for a number of reasons, a couple of them being that it doesn't account for the possibility that there might not be a `5` in the array and our `stopping condition` is always `true`! If there is no `5` then this loop will run until the browser crashes. This example does, however, demonstrate that you can use the `break` statement to cancel and jump out of a loop. 
 
 You can use `continue` to explicity stop the rest of the code in a loop from running and skip to the next iteration.
 
@@ -184,4 +186,4 @@ const famousQuote = "Your time is limited, so don't waste it living someone else
 ```
 
 `console.log()` all of the vowels.
-store in a variable the count of how many times `is` is used
+console.log all vowels and store the amount of vowels in a variable called vowelCount after log the vowelCount.

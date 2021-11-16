@@ -4,11 +4,11 @@
 ## JavaScript Intro - Functions & Scope
 
 ### Objectives
-* Be able to describe what functions are and why they are created
-* Understand the difference between parameters and arguments
-* Be able to describe the concept of Scope
-* Understand the differences between local (block scope) and global scope
-* Have a basic understanding of hoisting
+* Be able to describe what `functions` are and why they are created
+* Understand the difference between `parameters` and `arguments`
+* Be able to describe the concept of `Scope`
+* Understand the differences between `local` (`block scope`) and `global scope`
+* Have a basic understanding of `hoisting`
 
 ---
 
@@ -16,18 +16,18 @@
 
 ![wood chipper function](./wood-chipper-function.jpg)
 
-"Functions are one of the fundamental building blocks in JavaScript." - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+"`Functions` are one of the fundamental building blocks in JavaScript." - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
-So what are they? First and foremost, they are reusable chunks of code with labels. They offer a way to structure your code and help us build separation of concern. You can think of each function as it's own mini program that you can compose together with other functions to make a bigger program. Each of these mini programs has their own set of instructions that execute whenever the programmer needs that functionality to run.
+So what are they? First and foremost, they are `reusable chunks of code` with labels. They offer a way to structure your code and help us build separation of concern. You can think of each `function` as it's own mini program that you can compose together with other functions to make a bigger program. Each of these mini programs has their own set of instructions that execute whenever the programmer needs that functionality to run.
 
 >**Note:** You can think of the wood chipper above as a function. You know you can use it whenever you need wood chips. All you have to do is pass in wood, a series of steps act upon the wood, and out come the wood chips. Hopefully this analogy will become more clear soon.
 
-A couple things about functions to keep in mind:
+A couple things about `functions` to keep in mind:
 -  After defining `Functions`, they can be executed, which means the code inside them starts running. The word `executing` is synonomous with `running`, `invoking` or `calling`.
 - `Functions` can be passed around and stored like any other datatype.
-- `Functions` are often defined with input parameters that can be replaced by arguments during invocation (when executed). 
+- `Functions` are often defined with input `parameters` that can be replaced by `arguments` during invocation (when executed). 
 - They tend to produce an output - you can think about this as they evaluate to a piece of data after they've been executed (much like an expression).
-- Another way to think of a function is a group of statements that are composed together and labeled, waiting to be run.
+- Another way to think of a `function` is a group of statements that are composed together and labeled, waiting to be run.
 
 ## Defining Functions
 There are a couple of ways to create a function in JavaScript involving slightly different syntax. There are technically more types of functions, but they are essentially made up of these two foundational ones...
