@@ -22,3 +22,4 @@
 // console.log(typeof 'test')
 // console.log(typeof true)
 // console.log(Array.isArray(myLuckyNumbers))
+
