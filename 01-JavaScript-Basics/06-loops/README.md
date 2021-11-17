@@ -60,7 +60,7 @@ Lets break this down a bit:
   - We declare an iterator, `i` with `let` within the initialization portion of the loop.
     - Using `let` gives our variable the flexibility to change
     - We've set `i` to equal `0` because we are thinking about targetting elements in our array via their `index` using `bracket notation`
-    - We've set our stopping condition, and for us that means stop the loop when `i` is LESS THAN (`<`) `customers.length`
+    - We've set our stopping condition, and for us that means stop the loop when `i` is NO LONGER LESS THAN (`<`) `customers.length`
     - `customers` is our array, and `.length` gives us the amount of elements in that array (we get a `number` value here)
     - Our last expression is an iteration statement, which is telling our loop to add one (`++`) to `i` after every loop
 
